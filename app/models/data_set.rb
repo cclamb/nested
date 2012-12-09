@@ -1,5 +1,5 @@
 class DataSet < ActiveRecord::Base
-  attr_accessible :lft, :name, :parent_id, :rgt, :url
+  attr_accessible :name, :parent_id, :url
   acts_as_nested_set
   
   def max_level

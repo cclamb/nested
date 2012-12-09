@@ -5183,3 +5183,1425 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/themes/default/d.png" for 127.0.0.1 at 2012-12-08 14:58:47 -0700
 Served asset /themes/default/d.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in CollectiveIdea::Acts::NestedSet::Model instead. (called from <class:DataSet> at /Users/heileman/development/nested/app/models/data_set.rb:3)
+
+
+Started GET "/data_sets" for 127.0.0.1 at 2012-12-08 18:06:27 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  Rendered data_sets/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/themes/default/d.png" for 127.0.0.1 at 2012-12-08 18:06:28 -0700
+Served asset /themes/default/d.png - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Processing by DataSetsController#index as HTML
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7[0m
+  Rendered data_sets/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /data_sets.css - 200 OK (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /data_sets.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /jquery.jstree.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/themes/default/style.css" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /themes/default/style.css - 200 OK (9ms)
+
+
+Started GET "/assets/themes/default/d.png" for 127.0.0.1 at 2012-12-08 23:07:06 -0700
+Served asset /themes/default/d.png - 200 OK (0ms)
+
+
+Started GET "/data_sets/new" for 127.0.0.1 at 2012-12-08 23:07:38 -0700
+Processing by DataSetsController#new as HTML
+  Rendered data_sets/_form.html.erb (7.9ms)
+  Rendered data_sets/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/data_sets/new" for 127.0.0.1 at 2012-12-08 23:07:59 -0700
+Processing by DataSetsController#new as HTML
+  Rendered data_sets/_form.html.erb (2.5ms)
+  Rendered data_sets/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/data_sets" for 127.0.0.1 at 2012-12-08 23:08:19 -0700
+Processing by DataSetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Neighborhoods", "url"=>"www.neighborhoods.com", "parent_id"=>"", "lft"=>"", "rgt"=>""}, "commit"=>"Create Data set"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::ActiveRecordError (Unauthorized assignment to lft: it's an internal field handled by acts_as_nested_set code, use move_to_* methods instead.):
+  app/controllers/data_sets_controller.rb:50:in `new'
+  app/controllers/data_sets_controller.rb:50:in `create'
+
+
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started POST "/data_sets" for 127.0.0.1 at 2012-12-08 23:08:52 -0700
+Processing by DataSetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Neighborhoods", "url"=>"www.neighborhoods.com", "parent_id"=>"", "lft"=>"", "rgt"=>""}, "commit"=>"Create Data set"}
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::ActiveRecordError (Unauthorized assignment to lft: it's an internal field handled by acts_as_nested_set code, use move_to_* methods instead.):
+  app/controllers/data_sets_controller.rb:50:in `new'
+  app/controllers/data_sets_controller.rb:50:in `create'
+
+
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started POST "/data_sets" for 127.0.0.1 at 2012-12-08 23:08:56 -0700
+Processing by DataSetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Neighborhoods", "url"=>"www.neighborhoods.com", "parent_id"=>"", "lft"=>"", "rgt"=>""}, "commit"=>"Create Data set"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::ActiveRecordError (Unauthorized assignment to lft: it's an internal field handled by acts_as_nested_set code, use move_to_* methods instead.):
+  app/controllers/data_sets_controller.rb:50:in `new'
+  app/controllers/data_sets_controller.rb:50:in `create'
+
+
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/heileman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/data_sets" for 127.0.0.1 at 2012-12-08 23:09:02 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.3ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  Rendered data_sets/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:09:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/new" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in CollectiveIdea::Acts::NestedSet::Model instead. (called from <class:DataSet> at /Users/heileman/development/nested/app/models/data_set.rb:3)
+Processing by DataSetsController#new as HTML
+  Rendered data_sets/_form.html.erb (2.6ms)
+  Rendered data_sets/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:10 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started POST "/data_sets" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Processing by DataSetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Neigh", "url"=>"www.neighborhoods.com", "parent_id"=>""}, "commit"=>"Create Data set"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mDataSet Load (0.3ms)[0m  SELECT "data_sets".* FROM "data_sets" ORDER BY "rgt" desc LIMIT 1
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "data_sets" ("created_at", "lft", "name", "parent_id", "rgt", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 09 Dec 2012 06:10:18 UTC +00:00], ["lft", 15], ["name", "Neigh"], ["parent_id", nil], ["rgt", 16], ["updated_at", Sun, 09 Dec 2012 06:10:18 UTC +00:00], ["url", "www.neighborhoods.com"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/data_sets/8
+Completed 302 Found in 15ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDataSet Load (0.2ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8[0m
+  Rendered data_sets/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8[0m
+  Rendered data_sets/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:10:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8[0m
+  Rendered data_sets/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/8/edit" for 127.0.0.1 at 2012-12-08 23:11:28 -0700
+Processing by DataSetsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered data_sets/_form.html.erb (1.9ms)
+  Rendered data_sets/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:11:48 -0700
+Processing by DataSetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Neigh", "url"=>"www.neighborhoods.com", "parent_id"=>"5"}, "commit"=>"Update Data set", "id"=>"8"}
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "data_sets" SET "parent_id" = 5, "updated_at" = '2012-12-09 06:11:48.952083' WHERE "data_sets"."id" = 8
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? ORDER BY "lft" LIMIT 1[0m  [["id", 5]]
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "lft", "rgt", "parent_id" FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "data_sets" SET "lft" = CASE WHEN "lft" BETWEEN 13 AND 14 THEN "lft" + 16 - 14 WHEN "lft" BETWEEN 15 AND 16 THEN "lft" + 13 - 15 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 13 AND 14 THEN "rgt" + 16 - 14 WHEN "rgt" BETWEEN 15 AND 16 THEN "rgt" + 13 - 15 ELSE "rgt" END, "parent_id" = CASE WHEN id = 8 THEN 5 ELSE "parent_id" END WHERE "data_sets"."id" IN (SELECT "data_sets"."id" FROM "data_sets" ORDER BY "lft")[0m
+  [1m[35mDataSet Load (0.0ms)[0m  SELECT "lft", "rgt", "parent_id" FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mDataSet Load (0.0ms)[0m  [1mSELECT "lft", "rgt", "parent_id" FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/data_sets/8
+Completed 302 Found in 10ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:11:48 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:48 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:11:48 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:48 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:49 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:11:49 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 2 AND "data_sets"."rgt" >= 3) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 12 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 5 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 13 AND "data_sets"."rgt" >= 14) AND ("data_sets".id != 8)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 13 AND "data_sets"."rgt" >= 14) AND ("data_sets".id != 8)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 8 AND "data_sets"."rgt" >= 11) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 9 AND "data_sets"."rgt" >= 10) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  Rendered data_sets/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:36 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/8/edit" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Processing by DataSetsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered data_sets/_form.html.erb (2.1ms)
+  Rendered data_sets/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Processing by DataSetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Neigh", "url"=>"www.neighborhoods.com", "parent_id"=>""}, "commit"=>"Update Data set", "id"=>"8"}
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mUPDATE "data_sets" SET "parent_id" = NULL, "updated_at" = '2012-12-09 06:12:43.709844' WHERE "data_sets"."id" = 8[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "lft", "rgt", "parent_id" FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "data_sets" SET "lft" = CASE WHEN "lft" BETWEEN 1 AND 12 THEN "lft" + 14 - 12 WHEN "lft" BETWEEN 13 AND 14 THEN "lft" + 1 - 13 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 1 AND 12 THEN "rgt" + 14 - 12 WHEN "rgt" BETWEEN 13 AND 14 THEN "rgt" + 1 - 13 ELSE "rgt" END, "parent_id" = CASE WHEN id = 8 THEN NULL ELSE "parent_id" END WHERE "data_sets"."id" IN (SELECT "data_sets"."id" FROM "data_sets" ORDER BY "lft")[0m
+  [1m[35mDataSet Load (0.0ms)[0m  SELECT "lft", "rgt", "parent_id" FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/data_sets/8
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1
+  [1m[36mDataSet Load (0.2ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7[0m
+  Rendered data_sets/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:12:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:13:15 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:15 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:15 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:15 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:16 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/8/edit" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Processing by DataSetsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered data_sets/_form.html.erb (3.3ms)
+  Rendered data_sets/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Processing by DataSetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Neighborhoods", "url"=>"www.neighborhoods.com", "parent_id"=>""}, "commit"=>"Update Data set", "id"=>"8"}
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "data_sets" SET "name" = 'Neighborhoods', "updated_at" = '2012-12-09 06:13:26.343689' WHERE "data_sets"."id" = 8
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/data_sets/8
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/data_sets/8" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Processing by DataSetsController#index as HTML
+  [1m[36mDataSet Load (0.2ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  Rendered data_sets/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 23:13:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/new" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+DEPRECATION WARNING: The InstanceMethods module inside ActiveSupport::Concern will be no longer included automatically. Please define instance methods directly in CollectiveIdea::Acts::NestedSet::Model instead. (called from <class:DataSet> at /Users/heileman/development/nested/app/models/data_set.rb:3)
+Processing by DataSetsController#new as HTML
+  Rendered data_sets/_form.html.erb (2.2ms)
+  Rendered data_sets/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/data_sets" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Processing by DataSetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGnpqNBer6VEGHhj25s/G/ccy8XDIcWUYyBoYs2aM1M=", "data_set"=>{"name"=>"Graffiti", "url"=>"", "parent_id"=>""}, "commit"=>"Create Data set"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" ORDER BY "rgt" desc LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "data_sets" ("created_at", "lft", "name", "parent_id", "rgt", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 09 Dec 2012 17:44:33 UTC +00:00], ["lft", 17], ["name", "Graffiti"], ["parent_id", nil], ["rgt", 18], ["updated_at", Sun, 09 Dec 2012 17:44:33 UTC +00:00], ["url", ""]]
+  [1m[35m (4.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/data_sets/9
+Completed 302 Found in 10ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/data_sets/9" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Processing by DataSetsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDataSet Load (0.2ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered data_sets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 9
+  Rendered data_sets/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/" for 127.0.0.1 at 2012-12-09 10:44:45 -0700
+Processing by DataSetsController#index as HTML
+  [1m[36mDataSet Load (0.2ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 9[0m
+  Rendered data_sets/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:45 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:45 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:46 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:46 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/data_sets/" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Processing by DataSetsController#index as HTML
+  [1m[35mDataSet Load (0.2ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" IS NULL ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 8[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 1
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 1 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 6 AND "data_sets"."rgt" >= 7) AND ("data_sets".id != 6)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 6
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 4 AND "data_sets"."rgt" >= 5) AND ("data_sets".id != 3)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 3[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 2
+  [1m[36mDataSet Load (0.1ms)[0m  [1mSELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 2 ORDER BY "lft"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 14 AND "data_sets"."rgt" >= 15) AND ("data_sets".id != 5)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 10 AND "data_sets"."rgt" >= 13) AND ("data_sets".id != 4)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 4[0m
+  [1m[35mDataSet Load (0.1ms)[0m  SELECT "data_sets".* FROM "data_sets" WHERE "data_sets"."parent_id" = 4 ORDER BY "lft"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE ("data_sets"."lft" <= 11 AND "data_sets"."rgt" >= 12) AND ("data_sets".id != 7)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 7[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "data_sets" WHERE "data_sets"."parent_id" = 9
+  Rendered data_sets/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.css?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /data_sets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/data_sets.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /data_sets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /jquery.jstree.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-09 10:44:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
